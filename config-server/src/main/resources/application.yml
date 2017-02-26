@@ -1,5 +1,9 @@
 server:
   port: 8888
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://discovery:secret@localhost:8761/eureka/
 spring:
   cloud:
     config:

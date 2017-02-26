@@ -5,6 +5,12 @@ spring:
     active: development
   cloud:
     config:
-     uri: http://localhost:8888
      username: config
      password: secret
+     discovery:
+       enabled: true
+       service-id: config-server
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://discovery:secret@localhost:8761/eureka/

@@ -1,0 +1,10 @@
+spring:
+  profiles:
+    active: development
+mypassword: dummy
+security:
+  basic:
+    enabled: false
+  user:
+    password: dummy
+
